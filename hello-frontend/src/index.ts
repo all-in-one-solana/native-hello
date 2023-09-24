@@ -15,7 +15,7 @@ async function main() {
 
   console.log("Public key:", signer.publicKey.toBase58());
 
-  await helloWrold(connection, signer);
+  await helloWorld(connection, signer);
 }
 
 main()
@@ -74,7 +74,7 @@ async function airdropSolIfNeeded(
   }
 }
 
-async function helloWrold(connection: Web3.Connection, payer: Web3.Keypair) {
+async function helloWorld(connection: Web3.Connection, payer: Web3.Keypair) {
   const transaction = new Web3.Transaction()
   const instruction = new Web3.TransactionInstruction({
     // Instructions need 3 things
